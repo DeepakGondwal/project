@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>Pillow-Mart</title>
+</head>
+
+<body>
+    <!-- nav -->
+    <style>
+        .header {
+            position: fixed;
+            top: 0;
+            z-index: 1;
+            width: 100%;
+            background: white;
+        }
+
+        .nav-text {
+            margin: 10px;
+
+        }
+
+        .col_r {
+            background-color: #B08EAD;
+            color: white;
+        }
+
+        .col_r a {
+            background-color: #B08EAD;
+            color: white;
+        }
+
+        .icons {
+            padding: 18px 100px 20px;
+
+        }
+    </style>
+    <!-- nav -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a1 class="navbar-brand " href="#"><img src="img/logo.png.webp" alt=""></a1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse  " id="navbarSupportedContent" style="margin-left: 10%;">
+                    <ul class="navbar-nav me-auto mb-2 col-lg-12">
+                        <li class="nav-item nav-text">
+                            <a class="nav-link active mx-2" aria-current="page" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item  nav-text">
+                            <a class="nav-link mx-2" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown  nav-text ">
+                            <a class="nav-link dropdown-toggle mx-2" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Product
+                            </a>
+                            <ul class="dropdown-menu col_r">
+                                <li><a class="dropdown-item" href="productlist.html">Product List</a></li>
+                                <li><a class="dropdown-item" href="prodectdetails.html">Product Details</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown  nav-text">
+                            <a class="nav-link dropdown-toggle mx-2" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu col_r">
+                                <li><a class="dropdown-item" href="login.html">Login</a></li>
+                                <li><a class="dropdown-item" href="#">Product Checkout</a></li>
+                                <li><a class="dropdown-item" href="#">Shopping Cart</a></li>
+                                <li><a class="dropdown-item" href="#">Confirmation</a></li>
+                                <li><a class="dropdown-item" href="#">element</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown  nav-text">
+                            <a class="nav-link dropdown-toggle mx-2" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Blog
+                            </a>
+                            <ul class="dropdown-menu  col_r">
+                                <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                                <li><a class="dropdown-item" href="singleblog.html">Single Blog</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item  nav-text">
+                            <a class="nav-link mx-2" href="#">Contact</a>
+                        </li>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- banner -->
+    <style>
+        .about h1 {
+            color: white;
+            margin: 60px;
+            padding: 60px;
+            font-size: 50px;
+        }
+    </style>
+    <section class="container-fluid" style="background-color: #B08EAD; padding: 80px;height: 60vh;">
+        <div class="text-center about mx-3 p-3 ">
+            <h1>Login</h1>
+        </div>
+    </section>
+
+    <!-- login form -->
+    <style>
+        .form-box {
+
+            margin-top: 10%;
+            background-image: linear-gradient(90deg, #B08EAD 0%, #4B3049 64%, #B08EAD 100%);
+            background-size: 200% auto;
+
+        }
+
+        .text {
+            margin: 50% 0px 30% 0px;
+            text-align: center;
+        }
+
+        .text h5 {
+            color: white;
+        }
+
+        .views_btn {
+            margin-top: 25px;
+            background-color: transparent;
+            padding: 15px;
+            color: white;
+            width: 30%;
+            border: 2px solid white;
+            box-shadow: 0 0 0 white;
+        }
+
+        .views_btn:hover {
+            transition: .03s linear;
+            background-color: white;
+            color: #B08EAD;
+        }
+
+        /* form */
+        .form_box {
+            margin: 30% 5% 30% 5%;
+        }
+
+        .views_btn1 {
+            margin-top: 25px;
+            background-color: white;
+            padding: 15px;
+            color: #B08EAD;
+            width: 50%;
+            border: 2px solid #B08EAD;
+            box-shadow: 0 0 0 #B08EAD;
+        }
+
+        .views_btn1:hover {
+            transition: .03s linear;
+            background-color: #B08EAD;
+            color: #ffffff;
+        }
+    </style>
+    <section>
+        <div class="container">
+            <div class="row align-item-center">
+                <div class="col-6  form-box ">
+                    <div class="container text-center justify-content-center align-item-center text">
+                        <h5>New to our Shop?</h5>
+                        <h5>There are advances being made in science and technology everyday, and a good example of this
+                            is the</h5>
+                        <button class="btn btn views_btn">CREATE ACCOUNT</button>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="container align-item-center justify-content-center form_box">
+                        <h1 class="headline" style="padding: 25px;text-align: center;">Welcome Back ! <br>Please Sign in
+                            now</h1>
+                        <form class="form">
+                            <div class="mb-3">
+                                <label for="Username" class="form-label">Username</label>
+                                <input type="Username" class="form-control" id="Username" aria-describedby="emailHelp">
+
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                            </div>
+                            <button. class="btn btn views_btn1">Log In</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <style>
+        .blg_box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .box-size {
+            padding: 60px 0px 60px 50px;
+            margin: 60px 0px 60px 0px;
+        }
+
+        .menu_item a {
+            color: black;
+            padding: 5px;
+            text-decoration: none;
+        }
+    </style>
+
+    <section class="container-fluid" style=" margin: 80px 0px 0px 0px;">
+        <div class="row ">
+            <div class="col-4 box-size">
+                <img src="img/logo.png.webp" alt="">
+            </div>
+            <div class="col-4 box-size">
+                <div class="menu_item">
+                    <a href="home.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="productlist.html">Product</a>
+                    <a href="login.html">Page</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="">Contact</a>
+                </div>
+            </div>
+            <div class="col-4 box-size">
+                <div class="menu_item text-center">
+                    <a1 href=""><i class="bi bi-facebook"></i></a1>
+                    <a1 href=""><i class="bi bi-instagram"></i></a1>
+                    <a1 href=""><i class="bi bi-google"></i></a1>
+                    <a1 href=""><i class="bi bi-linkedin"></i></a1>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- copyright -->
+
+    <style>
+
+    </style>
+    <div class="container-fluid gx-0 " style="background-color:   #f4eef3;">
+        <div class="text-center p-3 ">
+            © 2020 Copyright:
+            <a class="text-dark" href="">PILLOWCART.com</a>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
